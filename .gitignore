@@ -9,3 +9,10 @@ notebooks/deaths_capita_vaxstatus.ipynb
 notebooks/deaths_capita_vaxstatus_ts.ipynb
 notebooks/deaths_cfr_vaxstatus.ipynb
 notebooks/deaths_trends_timezoom.ipynb
+.ipynb_checkpoints/main-checkpoint.ipynb
+.idea/covid19-public.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+__pycache__/get_data.cpython-310.pyc
