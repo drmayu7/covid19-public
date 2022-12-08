@@ -5,8 +5,8 @@ def read_csv(folder, filename):
     df = pd.read_csv(filepath)
 
     return df
-def convert_state_code(df):
 
+def convert_state_code(df):
     state_param = read_csv('epidemic/linelist','param_geo')
     state_param = state_param[159:][['state','idxs']].set_index('idxs')
     state_param.state = state_param.state.str.upper()
