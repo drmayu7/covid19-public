@@ -12,8 +12,6 @@ def convert_state_code(df):
     state_param.state = state_param.state.str.upper()
     state_param.index = state_param.index.astype('str')
 
-    df = read_csv('epidemic','clusters')
-
     df2 = df.assign(state=df.state.str.split(","))[['state','cluster']].explode('state')
     df2.state = df2.state.map(state_param['state']).fillna('not stated')
     df2 = df2.groupby('cluster').agg({'state': lambda x: ",".join(x)})
