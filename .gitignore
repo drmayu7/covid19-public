@@ -16,3 +16,5 @@ notebooks/deaths_trends_timezoom.ipynb
 .idea/modules.xml
 .idea/vcs.xml
 __pycache__/get_data.cpython-310.pyc
+.ipynb_checkpoints/GroupCode-checkpoint.ipynb
+.ipynb_checkpoints/Ming-checkpoint.ipynb
