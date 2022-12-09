@@ -33,5 +33,12 @@ null values in {columnname} replaced with '{null_statement}'
 
 Number of NaN values present:  + {str(count_nan)}
 ''')
-
     return df
+
+def show_cluster_max(df,value_column):
+    maxvalues = df[value_column].max()
+    cluster = df.loc[df[value_column] == int(maxvalues)]
+
+    return cluster
+
+
