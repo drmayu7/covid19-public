@@ -23,3 +23,15 @@ def convert_state_code(df):
     df3.rename(columns={'state_join':'state'},inplace=True)
 
     return df3
+def null_values(df,columnname,null_statement):
+    count_nan = df.isnull().sum()
+    print('Number of NaN values present: ' + str(count_nan))
+    df[columnname] = df[columnname].fillna(null_statement)
+    count_nan = df.isnull().sum()
+    print(f'''
+null values in {columnname} replaced with '{null_statement}'
+
+Number of NaN values present:  + {str(count_nan)}
+''')
+
+    return df
