@@ -1,7 +1,21 @@
 def plot_clustercategory_bar(df):
+    from matplotlib import pyplot as plt
+    import seaborn as sns
+    sns.set_theme()
+
     category = df.groupby('category').count()['cluster'].sort_values(ascending=False)
     category.plot(kind='bar', color=['darkslateblue', 'midnightblue', 'royalblue', 'deepskyblue', 'lightskyblue',
                                         'mediumturquoise', 'paleturquoise'])
+
+def plot_category_bar(df,column,formula):
+    from matplotlib import pyplot as plt
+    import seaborn as sns
+    sns.set_theme()
+
+    # To view the number of deaths according to Category in a pivot table
+    pivot = df.pivot_table(index = 'category', values =column, aggfunc = formula)
+    pivot = pivot.sort_values(column)  # ----To sort the values in ascending order
+    pivot.plot(kind='bar', xlabel='Category', ylabel=column, color='green', legend=False)
 
 def plot_clustertrend_heatmap(df):
     import pandas as pd
@@ -42,3 +56,31 @@ def plot_clustertrend_heatmap(df):
 
     ax.set_ylabel(ylabel = '')
     ax.set_xlabel(xlabel ='Cases in Clusters Distribution',loc = 'center')
+
+def plot_correlation_heatmap(df):
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    sns.set_theme()
+
+    # Correlation Coefficient(Pearson-Test) for multivariate features
+    sns.set_theme(style="white")
+    corr = df.corr()
+    mask = np.triu(df.corr())
+    f, ax = plt.subplots(figsize=(10, 5))
+    cmap = sns.color_palette("Blues")
+
+    vis3 = sns.heatmap(corr,
+                       mask=mask,
+                       cmap=cmap,
+                       vmax=.3,
+                       center=0,
+                       square=True,
+                       linewidths=3,
+                       cbar_kws={"shrink": .5},
+                       annot=True
+                       )
+
+    plt.title('''Correlation Coefficient (Pearson-Test) for Multivariate Features
+    of Covid19 Clusters
+    ''')
