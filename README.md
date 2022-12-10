@@ -10,9 +10,9 @@ The last fork was done on 2nd December 2022.
   1. Data Preparation using ELT:
       - Extracting and Loading the Clusters dataset from https://github.com/MoH-Malaysia/covid19-public and Viewing in Jupyter Notebook
       - Transformation of data includes 3 aspects:
-          a). Dropping columns that are not necessary for the analysis
-          b). Transform categorical columns in the dataset
-          c). Determine the null values and return null statement
+          - Dropping columns that are not necessary for the analysis
+          - Transform categorical columns in the dataset
+          - Determine the null values and return null statement
           
   2. Overview of the Transformed Cluster dataset:
       - Viewing the top 5 rows and bottom 5 rows
