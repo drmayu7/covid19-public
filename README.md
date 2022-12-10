@@ -34,7 +34,7 @@ The last fork was done on 2nd December 2022.
           - Heatmap - Distribution of Cases in Clusters according to each Category
 
 ## Technologies:
-The project created with:
+This project was created with:
   - Jupyter Notebook
   - PyCharm
   - Python 3.10 
