@@ -4,7 +4,7 @@ International Medical University HIA122 - Health Data Collections and Preparatio
 This repo focuses on clusters data that are publicly available in https://github.com/MoH-Malaysia/covid19-public
 Project output was written in Jupyter notebook file named main.ipynb
 
-The last fork was done until 2nd December 2022.
+The last fork was done on 2nd December 2022.
 
 ## General Information:
   1. Data Preparation using ELT:
