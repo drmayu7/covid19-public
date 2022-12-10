@@ -27,11 +27,11 @@ The last fork was done on 2nd December 2022.
 
   4. Visualizations for the Transformed Cluster dataset:
       - A total of 5 plots to visualize 5 different aspects:
-          a). Bar chart - Total number of Clusters in each Category
-          b). Bar chart - Total number of Deaths in each Category
-          c). Bar chart - To visualize the 'Active' and 'Ended' Clusters according to each Category
-          d). Correlation Heatmap - Pearson Test for Multivariate Features of COvid-19 Clusters
-          e). Heatmap - Distribution of Cases in Clusters according to each Category
+          - Bar chart - Total number of Clusters in each Category
+          - Bar chart - Total number of Deaths in each Category
+          - Bar chart - To visualize the 'Active' and 'Ended' Clusters according to each Category
+          - Correlation Heatmap - Pearson Test for Multivariate Features of COvid-19 Clusters
+          - Heatmap - Distribution of Cases in Clusters according to each Category
 
 ## Technologies:
 The project created with:
