@@ -33,7 +33,7 @@ The last fork was done on 2nd December 2022.
           - Correlation Heatmap - Pearson Test for Multivariate Features of COvid-19 Clusters
           - Heatmap - Distribution of Cases in Clusters according to each Category
 
-##Contributions from Group Members:
+## Contributions from Group Members:
   - Ming.ipynb : Analysis of Total number of Clusters based on Category
   - Narmathaa.ipynb : Analysis of Total number of Deaths based on Cluster and Category
   - Nisha1.ipynb : Analysis of Total number of cases and clusters based on States
