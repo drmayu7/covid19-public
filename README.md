@@ -37,7 +37,7 @@ The last fork was done on 2nd December 2022.
   - Ming.ipynb : Analysis of Total number of Clusters based on Category
   - Narmathaa.ipynb : Analysis of Total number of Deaths based on Cluster and Category
   - Nisha1.ipynb : Analysis of Total number of cases and clusters based on States
-  - Naufal : get_data.py,get_visual.py and main.ipynb (Compilation and codes improvisation) 
+  - Naufal : get_data.py, get_visual.py and main.ipynb (Compilation and codes improvisation) 
 
 ## Technologies:
 This project was created with:
